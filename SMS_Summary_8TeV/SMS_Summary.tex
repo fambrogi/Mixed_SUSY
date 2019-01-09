@@ -1,0 +1,207 @@
+
+\documentclass[11pt,A4paper]{article}
+%\pdfoutput=1
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{rotating}
+    \usepackage{pdflscape}
+    \usepackage{amsmath}
+    \usepackage{caption}
+    \usepackage{enumerate} 
+    \usepackage{cancel}
+    \usepackage{longtable}
+    \usepackage[toc,page]{appendix}
+    \usepackage{etoolbox} % provides \patchcmd macro1
+    \makeatletter % modify the "headings" page style
+    \patchcmd{\ps@headings}{{\slshape
+ightmark}\hfil	hepage}{	hepage\hfil}{}{}
+    \makeatother
+
+    \usepackage{authblk}
+    
+\textwidth 170mm
+\textheight 220mm
+\oddsidemargin -5mm
+\evensidemargin 5mm
+\topmargin -16pt
+\usepackage{multirow}
+\renewcommand\arraystretch{1.7} 
+
+\title{Report on the 8 TeV SUSY Simplified Model Results}
+\author{Federico Ambrogi}
+\affil{University of Vienna, Faculty of Physics, Bolzmanngasse 5, A-1090 Wien, Austria \\
+email: \url{ federico.ambrogi88@gmail.com}}
+%\normalsize {\it email: federico.ambrogi88@gmail.com}
+\date{\today}
+
+
+
+
+\begin{document}
+\maketitle
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section*{Summary of Upper Limits and Efficiency Maps Results}
+The following table summarises all the available Simplified Model Results (SMS) made public by the ATLAS and CMS Collaborations, through their respective wiki pages or on the hep-data website, at 8 TeV centre-of-mass energy.
+\begin{landscape}
+\tiny
+\begin{longtable} {|l|l|l|l|l|l|l|l|l|l|l|l|} \hline
+\toprule
+    & & \multicolumn{4}{ |c| }{\textbf{UL}} & \textbf{EM} & \multicolumn{4}{ |c| }{\textbf{Exclusion Lines}} & \\ \hline
+\textbf{Analysis} & \textbf{Simplified Model} & 
+\textbf{Obs} & \textbf{Obs$\pm \sigma$} & \textbf{Exp} & \textbf{Exp$\pm \sigma$} & & \textbf{Obs} & \textbf{Obs$\pm \sigma$} & \textbf{Exp} & \textbf{Exp$\pm \sigma$} & \textbf{Comment} \\ \hline
+\midrule
+\endhead
+
+CMS-SUS-12-028 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow q q  \tilde{\chi}_1 ^0 $ & Yes & No & Yes & Yes & No & Yes & Yes & Yes & Yes & EM given only for the sum in HT bin\\
+ & $pp \rightarrow \tilde{q} \tilde{q}, \tilde{q}\rightarrow q  \tilde{\chi}_1 ^0 $ & Yes & No & Yes & Yes & No & Yes & Yes & Yes & Yes & while the results are given in terms of\\
+ & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow t  \tilde{\chi}_1 ^0 $ & Yes & No & Yes & Yes & No & Yes & Yes & Yes & Yes & individual bin\\
+ & $pp \rightarrow \tilde{b} \tilde{b}, \tilde{b}\rightarrow b  \tilde{\chi}_1 ^0 $ & Yes & No & Yes & Yes & No & Yes & Yes & Yes & Yes & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & Yes & No & Yes & Yes & No & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow b  b \tilde{\chi}_1 ^0 $ & Yes & No & Yes & Yes & No & Yes & Yes & Yes & Yes & \\ \hline
+CMS-SUS-14-021 & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t} \rightarrow b  f f\tilde{\chi}_1 ^0 $ & Yes & No & Yes & No & Yes & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow \tilde{l} \nu_{l}  / \tilde{\nu}_{l} l , \tilde{\chi}_2 ^0 \rightarrow \tilde{l }l   / \tilde{\nu}_{l} \nu_{l}$ & No & No & No & No & No & No & No & No & No & \\ \hline
+CMS-SUS-13-013 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & Yes & No & Yes & No & Yes & Yes & Yes & Yes & Yes & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{t} t,\tilde{t}\rightarrow t \tilde{\chi}_1 ^0$ & No(1) & No & No(1) & No & No(1) & No(1) & No(1) & No(1) & No(1) & \\
+ & $pp \rightarrow \tilde{b} \tilde{b}, \tilde{b}\rightarrow \tilde{\chi}_1 ^{\pm} t,\tilde{\chi}_1 ^{\pm} \rightarrow W^{\pm} \tilde{\chi}_1 ^0$ & No(2) & No & No(2) & No & No & No(2) & No(2) & No(2) & No(2) & EM provided only for some SR\\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{b} b,\tilde{b}\rightarrow t \tilde{\chi}_1 ^{\pm} , \tilde{\chi}_1 ^{\pm} \rightarrow W \tilde{\chi}_1 ^0 $ & No(1) & No & No(1) & No & No & No(1) & No(1) & No(1) & No(1) & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{\chi}_1 ^{\pm} q q, \tilde{\chi}_1 ^{\pm} \rightarrow  W  \tilde{\chi}_1 ^0$ & No(1) & No & No(1) & No & No & No(1) & No(1) & No(1) & No(1) & EM provided only for some SR\\ \hline
+CMS-SUS-13-011 & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & No & Yes & No & \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow \tilde{\chi}_1 ^{\pm} b,\tilde{\chi}_1 ^{\pm} \rightarrow W^{\pm} \tilde{\chi}_1 ^0$ & Yes(3) & No & No & No & No(2) & Yes(3) & No & Yes(3) & No & \\ \hline
+CMS-SUS-13-007 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & No & No & No & No & No exclusion lines data\\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{t} t,\tilde{t}\rightarrow t \tilde{\chi}_1 ^0$ & No(2) & No & No & No & No(2) & No & No & No & No & No exclusion lines data\\ \hline
+CMS-SUS-13-012 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow q q  \tilde{\chi}_1 ^0 $ & Yes & No & Yes & No & Yes & Yes & Yes & Yes & Yes & \\
+ & $pp \rightarrow \tilde{q} \tilde{q}, \tilde{q}\rightarrow q  \tilde{\chi}_1 ^0 $ & Yes & No & Yes & No & Yes & Yes & Yes & Yes & Yes & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & Yes & No & Yes & No & Yes & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{\chi}_1 ^{\pm} q q,  \rightarrow \tilde{\chi}_1 V  \tilde{\chi}_1 ^0$ & No(1) & No & No(1) & No & Yes & NO(1) & No(1) & No(1) & No(1) & \\ \hline
+CMS-SUS-13-002 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & No & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{b} \tilde{b}, \tilde{b}\rightarrow \tilde{\chi}_1 ^{\pm} t,\tilde{\chi}_1 ^{\pm} \rightarrow W^{\pm} \tilde{\chi}_1 ^0$ & No(1) & No & No & No & No & No(1) & No(1) & No(1) & No(1) & \\ \hline
+CMS-SUS-13-024 & $pp \rightarrow \tilde{t_2} \tilde{t_2}, \tilde{t_2}\rightarrow \tilde{t_1} H , \tilde{t_1} \rightarrow t \tilde{\chi}_1 ^0$ & No(1) & No & No(1) & No & No(1) & No(1) & No(1) & No(1) & No(1) & \\
+ & $pp \rightarrow \tilde{t_2} \tilde{t_2}, \tilde{t_2}\rightarrow \tilde{t_1} Z , \tilde{t_1} \rightarrow t \tilde{\chi}_1 ^0$ & No(1) & No & No(1) & No & No(1) & No(1) & No(1) & No(1) & No(1) & No UL combination of channels\\
+  & $pp \rightarrow \tilde{t_2} \tilde{t_2}, \tilde{t_2}\rightarrow \tilde{t_1} Z/H , \tilde{t_1} \rightarrow t \tilde{\chi}_1 ^0$ & No(1) & No & No(1) & No & No(1) & No(1) & No(1) & No(1) & No(1) & No UL combination of channels\\ \hline
+CMS-SUS-13-006 & $pp \rightarrow \tilde{l} \tilde{l}, \tilde{l} \rightarrow l \tilde{\chi}_1 ^0$ & Yes & No & No & No & No & Yes & Yes & Yes & Yes & No UL combination L+R\\
+ & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow \tilde{l} \nu_{l}, \tilde{\chi}_2 ^0 \rightarrow \tilde{l} l $ & Yes(3) & No & No & No & No & Yes(3) & Yes(3) & Yes(3) & Yes(3) & 179 SR defined\\
+ & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow \tilde{\tau} \nu_{\tau}, \tilde{\chi}_2 ^0 \rightarrow \tilde{l} l $ & Yes(3) & No & No & No & No & Yes(3) & Yes(3) & Yes(3) & Yes(3) & 179 SR defined\\
+ & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow \tilde{\tau} \nu_{\tau}, \tilde{\chi}_2 ^0 \rightarrow \tilde{\tau} \tau$ & No(1) & No & No & No & No & No(1) & No(1) & No(1) & No(1) & 179 SR defined\\
+ & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow W \tilde{\chi}_1 ^0 , \tilde{\chi}_2 ^0 \rightarrow H \tilde{\chi}_1 ^0$ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & EM only for the single lepton an.\\
+  & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow W \tilde{\chi}_1 ^0 , \tilde{\chi}_2 ^0 \rightarrow Z \tilde{\chi}_1 ^0$ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & 179 SR defined\\ \hline
+CMS-SUS-14-002 & $pp \rightarrow \tilde{\chi}_1 ^0 \tilde{\chi}_1 ^0 , \tilde{\chi}_1 ^0 \rightarrow h / Z \tilde{G}$ & Yes & Yes & Yes & Yes & - & - & - & - & - & $\tilde{G}$ massless\\
+ & $pp \rightarrow \tilde{\chi}_1 ^0 \tilde{\chi}_1 ^0 , \tilde{\chi}_1 ^0 \rightarrow h \tilde{G}$ & Yes & Yes & Yes & Yes & - & - & - & - & - & No EM and lines needed\\
+  & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow W \tilde{\chi}_1 ^0 , \tilde{\chi}_2 ^0 \rightarrow H \tilde{\chi}_1 ^0$ & Yes & No & Yes & No & No & No & No & No & No & \\ \hline
+CMS-SUS-14-010 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & Yes & No & Yes & No & No & Yes & Yes & Yes & Yes & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{t} t,\tilde{t}\rightarrow t \tilde{\chi}_1 ^0$ & No(1) & No & No(1) & No & No & No(1) & No(1) & No(1) & No(1) & \\
+  & $pp \rightarrow \tilde{b} \tilde{b}, \tilde{b}\rightarrow \tilde{\chi}_1 ^{\pm} t,\tilde{\chi}_1 ^{\pm} \rightarrow W^{\pm} \tilde{\chi}_1 ^0$ & No(1) & No & No(1) & No & No & No(1) & No(1) & No(1) & No(1) & \\ \hline
+CMS-SUS-13-004 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow b  b \tilde{\chi}_1 ^0 $ & Yes & No & No & No & No & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & No & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow \tilde{\chi}_1 ^{\pm} b,\tilde{\chi}_1 ^{\pm} \rightarrow W^{\pm} \tilde{\chi}_1 ^0$ & Yes & No & No & No & No & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & No & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow t b \tilde{\chi}_1 ^{\pm} / t t \tilde{\chi}_1 ^0 $ & No(1) & No & No & No & No & No(1) & No(1) & No(1) & No(1) & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow t b \tilde{\chi}_1 ^{\pm} / b b \tilde{\chi}_1 ^0 $ & No(1) & No & No & No & No & No(1) & No(1) & No(1) & No(1) & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow t b \tilde{\chi}_1 ^{\pm} $ & No(1) & No & No & No & No & No(1) & No(1) & No(1) & No(1) & \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t} \rightarrow t \tilde{\chi}_1 ^0 / b \tilde{\chi}_1 ^{\pm} $ & No(1) & No & No & No & No & No(1) & No(1) & No(1) & No(1) & \\ \hline
+CMS-SUS-14-011 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow b \ b \ \tilde{\chi}_1 ^0 $ & Yes & No & Yes & Yes & No & Yes & No & Yes & Yes & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t \ t \ \tilde{\chi}_1 ^0 $ & Yes & No & Yes & Yes & No & Yes & No & Yes & Yes & \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow \tilde{\chi}_1 ^{\pm} b,\tilde{\chi}_1 ^{\pm} \rightarrow W^{\pm} \tilde{\chi}_1 ^0$ & Yes & No & Yes & Yes & No & Yes & No & Yes & Yes & \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow t \ \tilde{\chi}_1 ^0 $ & Yes & No & Yes & Yes & No & Yes & No & Yes & Yes & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow t b \tilde{\chi}_1 ^{\pm} / t t \tilde{\chi}_1 ^0 $ & No(1) & No & No(1) & No(1) & No & No(1) & No & No(1) & No(1) & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow t b \tilde{\chi}_1 ^{\pm} / b b \tilde{\chi}_1 ^0 $ & No(1) & No & No(1) & No(1) & No & No(1) & No & No(1) & No(1) & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow t b \tilde{\chi}_1 ^{\pm} $ & No(1) & No & No(1) & No(1) & No & No(1) & No & No(1) & No(1) & \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t} \rightarrow t \tilde{\chi}_1 ^0 / b \tilde{\chi}_1 ^{\pm} $ & No(1) & No & No(1) & No(1) & No & No(1) & No & No(1) & No(1) & \\ \hline
+CMS-SUS-14-014 & $pp \rightarrow \tilde{b} \tilde{b}, \tilde{b}\rightarrow \tilde{\chi}_2 ^0 b,\tilde{\chi}_2 ^0 \rightarrow Z \tilde{\chi}_1 ^0$ & No(1) & No(1) & No(1) & No(1) & No & No(1) & No(1) & No(1) & No(1) & \\
+  & $pp \rightarrow \tilde{b} \tilde{b}, \tilde{b}\rightarrow \tilde{\chi}_2 ^0 b ,\tilde{\chi}_2 ^0 \rightarrow \tilde{\chi}_1 ^0 Z / \tilde{l}l$ & No(1) & No(1) & No(1) & No(1) & No & No(1) & No(1) & No(1) & No(1) & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow q q \tilde{\chi}_1 ^0 ,\tilde{\chi}_1 ^0 \rightarrow Z  \tilde{G}$ & Yes & No & No & No & No & No & No & No & No & \\ \hline
+CMS-SUS-13-019 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow q q  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{q} \tilde{q}, \tilde{q}\rightarrow q  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{b} \tilde{b}, \tilde{b}\rightarrow b  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow b  b \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow q q \tilde{\chi}_2 ^0 / qq \tilde{\chi}_1 ^{\pm}$ & No(1) & No & No & No & No(1) & No(1) & No(1) & No(1) & No(1) & \\ \hline
+CMS-SUS-14-001 & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow t  \tilde{\chi}_1 ^0 $ & No & No & No & No & No & No & No & No & No & \\
+  & $pp \rightarrow \tilde{b} \tilde{b}, \tilde{b}\rightarrow b  \tilde{\chi}_1 ^0 $ & No & No & No & No & No & No & No & No & No & \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow c  \tilde{\chi}_1 ^0 $ & No & No & No & No & No & No & No & No & No & \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow \tilde{\chi}_1 ^{\pm} b,\tilde{\chi}_1 ^{\pm} \rightarrow W^{\pm} \tilde{\chi}_1 ^0$ & No & No & No & No & No & No & No & No & No & \\ \hline
+CMS-SUS-14-004 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow q q \tilde{\chi}_1 ^0  ,\tilde{\chi}_1 ^0 \rightarrow \gamma  \tilde{G}$ & No & No & No & No & No & No & No & No & No & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow q q \tilde{\chi}_1 ^0  / q q \tilde{\chi}_1 ^{\pm}$ & No & No & No & No & No & No & No & No & No & \\ \hline
+
+
+%\multicolumn{8}{ |l| }{Commmnt: EM given only for the Best SR.} \\ \hline
+\caption{Summary table of the CMS collaboration analyses results - upper limits and efficiency maps. The tag 'Yes' means that at least one of the results in the analysis targeting the specified model is provided in digital format. In brackets are the numbers of mass planes provided.}
+\end{longtable} 
+\end{landscape}
+
+
+
+\newpage
+
+\\
+\begin{landscape}
+\tiny
+\begin{longtable} {|l|l|l|l|l|l|l|l|l|l|l|l|} \hline
+\toprule
+    & & \multicolumn{4}{ |c| }{\textbf{UL}} & \textbf{EM} & \multicolumn{4}{ |c| }{\textbf{Exclusion Lines}} & \\ \hline
+\textbf{Analysis} & \textbf{Simplified Model} & 
+\textbf{Obs} & \textbf{Obs$\pm \sigma$} & \textbf{Exp} & \textbf{Exp$\pm \sigma$} & & \textbf{Obs} & \textbf{Obs$\pm \sigma$} & \textbf{Exp} & \textbf{Exp$\pm \sigma$} & \textbf{Comment} \\ \hline
+\midrule
+\endhead
+
+ATLAS-SUSY-2013-04 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & No & Yes & No & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{\chi}_1 ^{\pm} q q, \tilde{\chi}_1 ^{\pm} \rightarrow  W  \tilde{\chi}_1 ^0$ & No(1) & No & No(1) & No & No(1) & No(1) & No & No(1) & No & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{t} t,\tilde{t}\rightarrow t \tilde{\chi}_1 ^0$ & No & No & No & No & No & No & No & No & No & \\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow  q q \tilde{\chi}_1 ^{\pm}/ \tilde{\chi}_2 ^{0} , \tilde{\chi}_1 ^{\pm}/ \tilde{\chi}_2 ^{0} \rightarrow W/Z  \tilde{\chi}_1 ^0$ & No & No & No & No & No & No & No & No & No & \\ \hline
+ATLAS-SUSY-2013-05 & $pp \rightarrow \tilde{b} \tilde{b}, \tilde{b}\rightarrow b  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & No & Yes & Yes & Yes & Yes & Only best SR EM\\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow b W \tilde{\chi}_1 ^0 $ & Yes & No & No & No & No & Yes(4) & Yes(4) & Yes(4) & Yes(4) & Only best SR EM\\ \hline
+ATLAS-SUSY-2013-12 & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow W \tilde{\chi}_1 ^0 , \tilde{\chi}_2 ^0 \rightarrow H \tilde{\chi}_1 ^0$ & Yes & No & No & No & No & Yes & No & Yes & No & \\
+ & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow W \tilde{\chi}_1 ^0 , \tilde{\chi}_2 ^0 \rightarrow Z \tilde{\chi}_1 ^0$ & Yes & No & No & No & No & Yes & No & Yes & No & \\
+ & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow \tilde{l} \nu_{l}  / \tilde{\nu}_{l} l , \tilde{\chi}_2 ^0 \rightarrow \tilde{l} l   / \tilde{\nu}_{l} \nu_{l}$ & No(1) & No & No & No & No & No(1) & No & No(1) & No & \\
+  & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow \tilde{\tau} \nu_{\tau} / \tilde{\nu}_{\tau} \tau , \tilde{\chi}_2 ^0 \rightarrow \tilde{\tau} \tau  / \tilde{\nu}_{\tau}  \nu_{\tau}$ & No(1) & No & No & No & No & No(1) & No & No(1) & No & \\ \hline
+ATLAS-SUSY-2013-19 & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow b W \tilde{\chi}_1 ^0 $ & Yes & No & No & No & No & Yes & No & Yes & No(-) & \\
+ & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & No & Yes & No & Yes & No(-) & EM for combination of SR\\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow \tilde{\chi}_1 ^{\pm} b,\tilde{\chi}_1 ^{\pm} \rightarrow W^{\pm} \tilde{\chi}_1 ^0$ & Yes(5) & No & No & No & No & Yes & No & Yes & No(-) & EM for combination of SR\\ \hline
+ATLAS-SUSY-2013-08 & $pp \rightarrow \tilde{t_2} \tilde{t_2}, \tilde{t_2}\rightarrow \tilde{t_1} Z , \tilde{t_1} \rightarrow t \tilde{\chi}_1 ^0$ & No(1) & No & No & No & No & Yes & Yes & Yes & Yes & \\ \hline
+ATLAS-SUSY-2013-11 & $pp \rightarrow \tilde{l} \tilde{l}, \tilde{l}\rightarrow l \tilde{\chi}_1 ^0$ & Yes & No & No & No & No & Yes & No & Yes & No & Only best SR EM\\
+ & $pp \rightarrow \tilde{\chi}_1 ^{+} \tilde{\chi}_1 ^{-} , \tilde{\chi}_1 ^{\pm} \rightarrow W^{\pm} \tilde{\chi}_1 ^0 $ & Yes & No & No & No & No & Yes & No & Yes & No & Only best SR EM\\
+ & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow W \tilde{\chi}_1 ^0 , \tilde{\chi}_2 ^0 \rightarrow Z \tilde{\chi}_1 ^0$ & Yes & No & No & No & No & Yes & No & Yes & No & Only best SR EM\\
+  & $pp \rightarrow \tilde{\chi}_1 ^{+} \tilde{\chi}_1 ^{-} , \tilde{\chi}_1 ^{\pm}  \rightarrow \tilde{\nu}_{l} l / \tilde{l}  \nu_{l},  \tilde{\nu}/ \tilde{l} \rightarrow \nu / l \tilde{\chi}_0 ^1 $ & No(1) & No & No & No & No & No(1) & No & No(1) & No & \\ \hline
+ATLAS-SUSY-2013-09 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & \\
+& \multicolumn{11}{ |l| }{Only useful results provided out of 13 SMS interpretation (only one mass plane for long cascade topologies) }\\ \hline
+ATLAS-SUSY-2013-02 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow q q  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & \\
+ & $pp \rightarrow \tilde{q} \tilde{q}, \tilde{q}\rightarrow q  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & \\
+ & $pp \rightarrow \tilde{g} \tilde{q}, \tilde{g}\rightarrow q q   \tilde{\chi}_1 ^0 , \tilde{q}\rightarrow  q   \tilde{\chi}_1 ^0$ & Yes & No & No & No & No & Yes & Yes & Yes & Yes & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{t} t,\tilde{t}\rightarrow c \tilde{\chi}_1 ^0$ & No(1) & No & No & No & No & No(1) & No(1) & No(1) & No(1) & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{\chi}_1 ^{\pm} q q, \tilde{\chi}_1 ^{\pm} \rightarrow  W  \tilde{\chi}_1 ^0$ & No(2) & No & No & No & No & No(2) & No(2) & No(2) & No(2) & \\
+  & $pp \rightarrow \tilde{q} \tilde{q}, \tilde{q}\rightarrow \tilde{\chi}_1 ^{\pm} q , \tilde{\chi}_1 ^{\pm} \rightarrow  W  \tilde{\chi}_1 ^0$ & No(2) & No & No & No & No & No(2) & No(2) & No(2) & No(2) & \\ \hline
+ATLAS-SUSY-2013-16 & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & No & Yes & No & \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow \tilde{\chi}_1 ^{\pm} b,\tilde{\chi}_1 ^{\pm} \rightarrow W^{\pm} \tilde{\chi}_1 ^0$ & No(1) & No & No & No & No(1) & No(1) & No & No(1) & No & \\ \hline
+ATLAS-SUSY-2013-14 & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow \tilde{\tau} \nu_{\tau} / \tilde{\nu}_{\tau} \tau , \tilde{\chi}_2 ^0 \rightarrow \tilde{\tau} \tau  / \tilde{\nu}_{\tau}  \nu_{\tau}$ & No(1) & No & No & No & No & No(1) & No & No(1) & No & EM only for some sensitive SRs\\
+  & $pp \rightarrow \tilde{\chi}_1 ^{+} \tilde{\chi}_1 ^{-} , \tilde{\chi}_1 ^{\pm}  \rightarrow \tilde{\tau} \tau  / \tilde{\nu}_{\tau}  \nu_{\tau} $ & No(1) & No & No & No & No & No(1) & No & No(1) & No & EM only for best SR\\ \hline
+ATLAS-SUSY-2013-20 & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{t} t,\tilde{t}\rightarrow c \tilde{\chi}_1 ^0$ & No & No & No & No & No & No(1) & No & No(1) & No & EM only for some sensitive SRs\\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{\chi}_1 ^{\pm} q q, \tilde{\chi}_1 ^{\pm} \rightarrow  W  \tilde{\chi}_1 ^0$ & No(1) & No & No & No & No & No(1) & No & No(1) & No & EM only for some sensitive SRs\\
+ & $pp \rightarrow \tilde{q} \tilde{q}, \tilde{q}\rightarrow \tilde{\chi}_1 ^{\pm} q , \tilde{\chi}_1 ^{\pm} \rightarrow  W  \tilde{\chi}_1 ^0$ & No(1) & No & No & No & No & No(1) & No & No(1) & No & EM only for some sensitive SRs\\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & No & No & No & No & No & Yes & No & Yes & No & EM only for some sensitive SRs\\
+ & \multicolumn{11}{ |l| }{Other long cascade topologies with no data provided}\\ \hline
+ATLAS-SUSY-2013-18 & $pp \rightarrow \tilde{b} \tilde{b}, \tilde{b}\rightarrow \tilde{\chi}_2 ^{0} b, \tilde{\chi}_2 ^{0} \rightarrow  h  \tilde{\chi}_1 ^0$ & No & No & No & No & No & No(1) & No & No(1) & No & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{b} b,\tilde{b}\rightarrow b \tilde{\chi}_1 ^0$ & No & No & No & No & No & No(1) & No & No(1) & No & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{t} t,\tilde{t}\rightarrow t \tilde{\chi}_1 ^0$ & No & No & No & No & No & No(1) & No & No(1) & No & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow \tilde{\chi}_1 ^{\pm} b t,\tilde{\chi}_1 ^{\pm} \rightarrow ff \tilde{\chi}_1 ^0$ & No & No & No & No & No & No(1) & No & No(1) & No & \\
+ & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g}\rightarrow t  t  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & No & Yes & No & Only separate 0/1 lepton UL\\
+  & $pp \rightarrow \tilde{g} \tilde{g}, \tilde{g} \rightarrow b  b \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & No & Yes & No & \\ \hline
+ATLAS-SUSY-2013-15 & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow t  \tilde{\chi}_1 ^0 $ & Yes & No & Yes & No & Yes & Yes & No & Yes & No & EM for 3 SR out of 4\\
+ & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow b W \tilde{\chi}_1 ^0 $ & Yes & No & No & No & No & Yes & No & No & No & Both on and offshell W decay \\
+  & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow \tilde{\chi}_1 ^{\pm} b,\tilde{\chi}_1 ^{\pm} \rightarrow W^{\pm} \tilde{\chi}_1 ^0$ & Yes(7) & No & Yes(7) & No & No & Yes(7) & No & Yes(7) & No & Both on and offshell W decay\\ \hline
+ATLAS-SUSY-2013-21 & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow c  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & UL for separate SR only\\
+ & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t} \rightarrow b  f f\tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & UL for separate SR only\\
+  & $pp \rightarrow \tilde{b} \tilde{b}, \tilde{b}\rightarrow b  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & Yes & Yes & Yes & UL for separate SR only\\ \hline
+ATLAS-SUSY-2014-03 & $pp \rightarrow \tilde{c} \tilde{c}, \tilde{c}\rightarrow c  \tilde{\chi}_1 ^0 $ & Yes & No & No & No & Yes & Yes & No & Yes & No & UL for separate SR,no combination\\ \hline
+ATLAS-SUSY-2013-23 & $pp \rightarrow \tilde{\chi}_1 ^{\pm} \tilde{\chi}_2 ^0 , \tilde{\chi}_1 ^{\pm} \rightarrow W \tilde{\chi}_1 ^0 , \tilde{\chi}_2 ^0 \rightarrow H \tilde{\chi}_1 ^0$ & Yes & No & No & No & Yes & Yes & No & Yes & No & \\ \hline
+ATLAS-SUSY-2014-04 & $pp \rightarrow \tilde{t} \tilde{t}, \tilde{t}\rightarrow \tilde{\tau} \nu b,\tilde{\tau} \rightarrow \tau \tilde{G}$ & Yes & No & No & No & No & Yes & No & Yes & No & \\ \hline
+
+\caption{Summary table of the ATLAS collaboration analyses results - upper limits and efficiency maps. The tag 'Yes' means that at least one of the results in the analysis targeting the specified model is provided in digital format. In brackets are the numbers of mass planes provided.}
+\end{longtable} 
+\end{landscape}
+
+
+\end{document}
+
